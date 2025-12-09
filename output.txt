@@ -1,0 +1,84 @@
+Välkommen till RECON script för att kontrollera en Linux-miljö
+
+=== SYSTEMINFO ===
+Linux kali 6.12.25-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.12.25-1kali1 (2025-04-30) x86_64 GNU/Linux
+
+=== AKTUELL ANVÄNDARE  ===
+kali
+
+=== ANVÄNDARE MED SHELL ===
+root:x:0:0:root:/root:/usr/bin/zsh
+postgres:x:126:130:PostgreSQL administrator:/var/lib/postgresql:/bin/bash
+kali:x:1000:1000::/home/kali:/usr/bin/zsh
+
+=== NÄTVERK ===
+    inet 127.0.0.1/8 scope host lo
+    inet6 ::1/128 scope host noprefixroute 
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic noprefixroute eth0
+    inet6 fd17:625c:f037:2:bcee:c024:6eaa:cd8e/64 scope global dynamic noprefixroute 
+    inet6 fe80::a0bc:8087:26fc:cfb3/64 scope link noprefixroute 
+
+=== LÄGG TILL FLERA TESTER  ===
+=== HÅRDVARA  ===
+Architecture:                         x86_64
+CPU op-mode(s):                       32-bit, 64-bit
+Address sizes:                        39 bits physical, 48 bits virtual
+Byte Order:                           Little Endian
+CPU(s):                               2
+On-line CPU(s) list:                  0,1
+Vendor ID:                            GenuineIntel
+Model name:                           12th Gen Intel(R) Core(TM) i5-12450H
+CPU family:                           6
+Model:                                154
+Thread(s) per core:                   1
+Core(s) per socket:                   2
+Socket(s):                            1
+Stepping:                             3
+BogoMIPS:                             4992.01
+Flags:                                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx rdtscp lm constant_tsc rep_good nopl xtopology nonstop_tsc cpuid tsc_known_freq pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ibrs_enhanced fsgsbase bmi1 avx2 bmi2 invpcid rdseed adx clflushopt sha_ni arat md_clear flush_l1d arch_capabilities
+Hypervisor vendor:                    KVM
+Virtualization type:                  full
+L1d cache:                            96 KiB (2 instances)
+L1i cache:                            64 KiB (2 instances)
+L2 cache:                             2.5 MiB (2 instances)
+L3 cache:                             24 MiB (2 instances)
+NUMA node(s):                         1
+NUMA node0 CPU(s):                    0,1
+Vulnerability Gather data sampling:   Not affected
+Vulnerability Itlb multihit:          Not affected
+Vulnerability L1tf:                   Not affected
+Vulnerability Mds:                    Not affected
+Vulnerability Meltdown:               Not affected
+Vulnerability Mmio stale data:        Not affected
+Vulnerability Reg file data sampling: Mitigation; Clear Register File
+Vulnerability Retbleed:               Mitigation; Enhanced IBRS
+Vulnerability Spec rstack overflow:   Not affected
+Vulnerability Spec store bypass:      Vulnerable
+Vulnerability Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:             Mitigation; Enhanced / Automatic IBRS; RSB filling; PBRSB-eIBRS SW sequence; BHI SW loop, KVM SW loop
+Vulnerability Srbds:                  Not affected
+Vulnerability Tsx async abort:        Not affected
+== HUR MYCKET RAM ÄR LEDIGT/ANVÄNDS? ==
+               total        used        free      shared  buff/cache   available
+Mem:           1.9Gi       1.4Gi        94Mi        30Mi       702Mi       589Mi
+Swap:          953Mi       1.0Mi       952Mi
+== ADMIN ==
+sudo:x:27:kali
+== SENASTE INLOGGNINGAR ==
+kali     tty7         Tue Dec  9 03:07 - still logged in    :0
+lightdm  tty7         Tue Dec  9 03:07 - 03:07  (00:00)     :0
+kali     tty7         Mon Dec  8 06:43 - still logged in    :0
+lightdm  tty7         Mon Dec  8 06:42 - 06:43  (00:00)     :0
+kali     tty7         Mon Dec  8 04:27 - still logged in    :0
+lightdm  tty7         Mon Dec  8 04:26 - 04:27  (00:00)     :0
+kali     tty7         Wed Oct 22 03:00 - still logged in    :0
+lightdm  tty7         Wed Oct 22 03:00 - 03:00  (00:00)     :0
+kali     tty7         Tue Oct 14 09:03 - still logged in    :0
+lightdm  tty7         Tue Oct 14 09:03 - 09:03  (00:00)     :0
+== ROUTING ==
+default via 10.0.2.2 dev eth0 proto dhcp src 10.0.2.15 metric 100 
+10.0.2.0/24 dev eth0 proto kernel scope link src 10.0.2.15 metric 100 
+== AKTIVA PORTAR  ==
+Netid State Recv-Q Send-Q Local Address:Port Peer Address:Port
+== DATUM OCH TID ==
+Tue Dec  9 08:48:55 AM EST 2025

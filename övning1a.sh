@@ -3,8 +3,9 @@
 # Detta script samlar in systeminformation - RECON
 #
 # Kan användas för följande attacker:
-# [Skriv möjliga attacker]
-#
+# Upptäcka öppna portar som kan utnyttjas
+# Hitta obehöriga användare
+# Kartlägga nätverk och routing
 # Author: Ulf Berglund
 # Last Update: 2025-01-01
 
